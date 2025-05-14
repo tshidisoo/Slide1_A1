@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Language Quiz Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>English Language Quiz Collection</h1>
+            <p class="quote">"A person who never made a mistake never tried anything new." - Albert Einstein</p>
+        </header>
+        
+        <div class="category-selection">
+            <h2>Select a Quiz Category</h2>
+            <div class="quiz-categories">
+                <div class="category-card" data-category="alphabet">
+                    <div class="card-inner">
+                        <h3>Alphabet & Words</h3>
+                        <p>Test your knowledge of English alphabet, vowels, consonants, and word patterns.</p>
+                        <div class="card-icon">Aa</div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="subjective-objective">
+                    <div class="card-inner">
+                        <h3>Subjective & Objective Pronouns</h3>
+                        <p>Practice using I/me, you/you, he/him, she/her, it/it, we/us, they/them.</p>
+                        <div class="card-icon">I→Me</div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="possessive">
+                    <div class="card-inner">
+                        <h3>Possessive Pronouns & Adjectives</h3>
+                        <p>Learn the difference between mine/my, yours/your, his/his, hers/her, etc.</p>
+                        <div class="card-icon">My→Mine</div>
+                    </div>
+                </div>
+                <div class="category-card" data-category="articles">
+                    <div class="card-inner">
+                        <h3>Articles</h3>
+                        <p>Master the use of a, an, and the in English sentences.</p>
+                        <div class="card-icon">A/An/The</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-container">
+            <div id="quiz-screen" class="screen">
+                <div class="quiz-header">
+                    <button id="back-btn" class="icon-btn">⬅ Back</button>
+                    <h2 id="quiz-title">Quiz Title</h2>
+                    <div id="score-display">Score: 0</div>
+                </div>
+                
+                <div class="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+                <div id="progress-text">Question 1/5</div>
+                
+                <div id="question-container">
+                    <h2 id="question-text">Question goes here</h2>
+                    <div id="options-container"></div>
+                </div>
+                
+                <div id="feedback" class="hidden"></div>
+                <button id="next-btn" class="btn hidden">Next Question</button>
+            </div>
+            
+            <div id="result-screen" class="screen">
+                <button id="result-back-btn" class="icon-btn">⬅ Back to Categories</button>
+                <h2 id="result-title">Quiz Completed!</h2>
+                <div id="final-score">Your score: 0/5</div>
+                <div id="result-message"></div>
+                <div id="summary-container"></div>
+                <div class="result-buttons">
+                    <button id="restart-btn" class="btn">Try Again</button>
+                    <button id="categories-btn" class="btn btn-outline">All Categories</button>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>English Language Quiz Collection - A1 Level</p>
+        </footer>
+    </div>
+    
+    <script src="index.js"></script>
+</body>
+</html>
