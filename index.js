@@ -126,7 +126,7 @@ const quizzes = {
             },
             {
                 question: "Which sentence uses subjective and objective pronouns correctly?",
-                options: ["Me and her went swimming.", "Him and I are friends.", "She gave the gift to he.", "They invited my friend and I."],
+                options: ["Me and her went swimming.", "Him and I are friends.", "She gave the gift to he.", "They invited my friend and me."],
                 correctAnswer: "They invited my friend and I.",
                 explanation: "They is correctly used as a subjective pronoun, and my friend and I is correctly used as the object of the verb 'invited'."
             }
